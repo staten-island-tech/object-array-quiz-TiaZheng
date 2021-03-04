@@ -47,6 +47,13 @@ const D2terms= presidents.filter(function(presidents) {
     return false;
   }
 });
-console.table(R1terms);
+console.log(D2terms);
 
 //BONUS write a script to check if LBJ was a 2 term president. IF he was then alert("LBJ served two terms") else alert "LBJ was one and done"
+const LBJ= presidents.filter(function(presidents) {
+  if(presidents.name=="Lyndon Johnson" && presidents.terms==2) {
+    alert("LBJ served two terms");
+  } else {
+    alert("LBJ was one and done");
+  }
+});
